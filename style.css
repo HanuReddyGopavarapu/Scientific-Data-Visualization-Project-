@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header {
+  background-color: #005a87;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Main dashboard container styling */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Individual chart container styling */
+.chart-container {
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%; /* Responsive width */
+  max-width: 600px; /* Maximum width */
+}
+
+/* Styling for the chart titles */
+.chart-container h2 {
+  border-bottom: 2px solid #005a87;
+  color: #005a87;
+  font-size: 18px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Dropdown (select element) styling */
+select {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* SVG specific styling for charts */
+svg {
+  display: block; /* Removes bottom space/margin */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling bars in bar charts */
+.bar {
+  fill: steelblue; /* Default fill, consider changing per bar via JS if needed */
+}
+
+/* Enhance visibility of axes and labels */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 12px;
+  color: #666;
+}
